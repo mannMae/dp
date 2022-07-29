@@ -15,6 +15,8 @@ contract SaleAnimalToken {
 
     uint256[] public onSaleAnimalTokenArray;
 
+    uint256[] public onSaleAnimalTokenArray;
+
     function setForSaleAnimalToken(uint256 _animalTokenId, uint256 _price) public {
         address animalTokenOwner = mintAnimalTokenAddress.ownerOf(_animalTokenId);
 
