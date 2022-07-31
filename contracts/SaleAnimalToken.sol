@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "MintAnimalToken.sol";
+import "./MintAnimalToken.sol";
 
 contract SaleAnimalToken {
     MintAnimalToken public mintAnimalTokenAddress;
@@ -12,8 +12,6 @@ contract SaleAnimalToken {
     }
 
     mapping(uint256 => uint256) public animalTokenPrices;
-
-    uint256[] public onSaleAnimalTokenArray;
 
     uint256[] public onSaleAnimalTokenArray;
 
@@ -31,14 +29,14 @@ contract SaleAnimalToken {
     }
 
     function purchaseAnimalToken(uint256 _animalTokenId) public payable {
-        uint256 price = animalTokenPrices(_animalTokenId);
+        uint256 price = animalTokenPrices[_animalTokenId];
         address animalTokenOwner = mintAnimalTokenAddress.ownerOf(_animalTokenId);
 
         require(price >0, "Animal token not sale.");
         require(price <= msg.value, "Calloer sent lower than price.");
-        require(animalTokenOwner != msg.senter, "Caller is animal token owner.");
+        require(animalTokenOwner != msg.sender, "Caller is animal token owner.");
 
-        payable(animalTokenOwner).transfer(mas.value);
+        payable(animalTokenOwner).transfer(msg.value);
         mintAnimalTokenAddress.safeTransferFrom(animalTokenOwner, msg.sender, _animalTokenId);
 
         animalTokenPrices[_animalTokenId] = 0;
