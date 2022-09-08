@@ -37,6 +37,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getOnSaleAnimalTokenArrayLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "mintAnimalTokenAddress",
 				"outputs": [
 					{
@@ -65,6 +78,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_animalTokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseAnimalToken",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -121,10 +147,10 @@
 			]
 		},
 		"SaleAnimalToken.sol": {
-			"keccak256": "0x40012e8fd88cf7e7c1588e7df8dc8400e30b355d90654e1eeeb080acb2521bc6",
+			"keccak256": "0xaed3c45a73737a4ec5747b960231dec13c6d8524c05e68f6ea6f8e87dbbd4190",
 			"urls": [
-				"bzz-raw://3d288a7424d4961cd8f228dfe4671f1252383779404ffb777b1a1033413cc8db",
-				"dweb:/ipfs/QmUS84symkMGZpW5YFrhpsijFPsevPiWt9xLcfQFGE7g3v"
+				"bzz-raw://9503190d6895382de7464ad15376fd6080ba70e1352d357a51225cc708663cab",
+				"dweb:/ipfs/QmTQs5afu6cERMsVwfXBjt5My4hzNxyRuoBJzqMy2Tn2sk"
 			]
 		},
 		"node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
