@@ -36,6 +36,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_animalTokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getAnimalTokenPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getOnSaleAnimalTokenArrayLength",
 				"outputs": [
@@ -140,17 +159,17 @@
 	},
 	"sources": {
 		"MintAnimalToken.sol": {
-			"keccak256": "0x8b8c01b34286e4adbd27336633da4c73109246b411e846f32e6e82f715dcfce0",
+			"keccak256": "0x93cdcd8dc75af4c39d5565a5e08759082ff2491e4fce61c4d60a689d8e5c1363",
 			"urls": [
-				"bzz-raw://5fe9cd17af342cc414c56cb4f32b47b614ad502e0593919fedbad943ba656fdc",
-				"dweb:/ipfs/QmU44QqN9hewV9E8qJjE9k16rSEXWgqokrgG2Kt3kPZLS2"
+				"bzz-raw://a95bfc6b04d59297745ff7f0e7e82402d7aaae273676346c2c69dc8c4bc0cb23",
+				"dweb:/ipfs/QmdYrpzNpcuwwU4vam9LWRhckBZWnbVvaweM3txnGye7TB"
 			]
 		},
 		"SaleAnimalToken.sol": {
-			"keccak256": "0xaed3c45a73737a4ec5747b960231dec13c6d8524c05e68f6ea6f8e87dbbd4190",
+			"keccak256": "0xdaf4558ef68db436bd520f5e5af28f0eaab1636cd48201949b20b1c400765988",
 			"urls": [
-				"bzz-raw://9503190d6895382de7464ad15376fd6080ba70e1352d357a51225cc708663cab",
-				"dweb:/ipfs/QmTQs5afu6cERMsVwfXBjt5My4hzNxyRuoBJzqMy2Tn2sk"
+				"bzz-raw://af60b5e535f8a114f1fa45c52c7bdf249e5e69348f023481e1801845436cb59f",
+				"dweb:/ipfs/QmcED7K9WrgTgUFAcPivndFrTT4eHyAG4tqzvs77iYm8ee"
 			]
 		},
 		"node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
